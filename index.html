@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/switch.css">
+    <title>Web Estacionamento</title>
+</head>
+<body>
+    <div id="app" class="page">
+        <h1>Estacionamento Privado</h1>
+        <hr>
+        <form action="" id="idFormulario" class="conteiner">
+            <div class="divInputs">
+                <label for="explicit-modelo">Modelo do Veiculo:</label>
+                <br>
+                <input type="text" id="explicit-modelo" placeholder="Digite o Modelo do veiculo...">
+            </div>
+    
+            <div class="divInputs">
+                <label for="explicit-placa">Placa do veiculo:</label>
+                <br>
+                <input type="text" id="explicit-placa" placeholder="Digite a Placa do veiculo...">
+            </div>
+
+            <section class="conteiner2">
+                <div class="toggle-wrapper">
+                    <label>
+                        Preferenciais
+                        <input type="checkbox" class="toggle-input">
+                        <div class="slider">
+                            <button class="button">
+                                <img src="./complemento/cadeira.svg" alt="">
+                            </button>
+                        </div>
+                    </label>
+                    
+                </div>
+            </section>
+
+            <input class="btn" type="submit" value="Adicionar">
+            
+        </form>
+
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script src="./js/index.js" type="module" defer></script>    
+</body>
+</html>
